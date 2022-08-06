@@ -1,0 +1,39 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "description": "Project description",
+  "type": "module",
+  "bin": {
+    "extra-component": "outfile.cjs"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write .",
+    "build": "zx ./scripts/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Asaki-M/cli-template"
+  },
+  "keywords": [],
+  "author": "Qinghuan <1041220793@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Asaki-M/cli-template/issues"
+  },
+  "homepage": "https://github.com/Asaki-M/cli-template#readme",
+  "devDependencies": {
+    "@types/prompts": "^2.0.14",
+    "esbuild": "^0.14.53",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prompts": "^2.4.2",
+    "zx": "^7.0.8"
+  },
+  "lint-staged": {
+    "*.{js,ts,json}": [
+      "prettier --write"
+    ]
+  }
+}
